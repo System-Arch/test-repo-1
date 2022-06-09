@@ -18,5 +18,5 @@ jobs:
           which gcc; \
           which cmake; \
           gcc -v; \
-          pip -v
+          pip -V
       - run: echo "🍏 This job's status is ${{ job.status }}."
