@@ -20,7 +20,7 @@ jobs:
           gcc -v; \
           pip -V
       - name: Install Conan
-      - run: pip install conan
+        run: pip install conan
       - run: which conan
       - run: conan -v
       - run: echo "🍏 This job's status is ${{ job.status }}."
