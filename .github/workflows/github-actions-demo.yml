@@ -13,12 +13,13 @@ jobs:
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
       - name: List files in the repository
         run: |
-          ls ${{ github.workspace }}; \
-          which pip; \
-          which gcc; \
-          which cmake; \
-          gcc -v; \
-          pip -V
+          ls ${{ github.workspace }};
+      - run: which which
+      - run: which pip
+      - run: which gcc
+      - run: which cmake
+      - run: gcc -v
+      - run: pip -V
       - name: Install Conan
         run: pip install conan
       - run: which conan
