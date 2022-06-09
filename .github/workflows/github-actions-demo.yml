@@ -17,5 +17,5 @@ jobs:
           which pip; \
           which gcc; \
           which cmake; \
-          whcih conan
+          which conan
       - run: echo "🍏 This job's status is ${{ job.status }}."
